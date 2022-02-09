@@ -1,19 +1,15 @@
-# Salesforce DX Project: Next Steps
+# Salesforce HomeTask: 
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+1. Create apex class that can be lunched from Flow or Process Builder (for Account).
 
-## How Do You Plan to Deploy Your Changes?
+2. Apex class should make next logic: When new Account is created, create new Task object with Subject “Negotiations with {Account.Name}”, link created Account with this Task.
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+3. If Account is updated and Account has more than 3 Tasks => assign all Tasks to one User (random active User)
 
-## Configure Your Salesforce DX Project
+4. Create example Flow or Process Builder to show Apex call.
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+5. Collect all code in remote git repository for review
 
-## Read All About It
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
-# Apex-in-Flow
+![Apex_in_Flow](/flow.jpg)
+
